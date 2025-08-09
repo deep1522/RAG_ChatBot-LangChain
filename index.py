@@ -1,4 +1,9 @@
 ## RAG Q&A Conversation with PDF Including Chat History
+import sys
+
+# Force Python to use pysqlite3 instead of the default sqlite3
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
 import streamlit as st
@@ -131,4 +136,7 @@ if uploaded_files:
             # st.write(st.session_state.store)
             st.success(f"Assistant: {response['answer']}")
             st.write("Chat History:",session_history.messages)
+
+
+
 
