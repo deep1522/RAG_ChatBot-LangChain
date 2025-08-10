@@ -93,7 +93,8 @@ if uploaded_files:
             "You are an Assistant for the question-answering tasks."
             "Use the following pieces of retrieved context to answer"
             "the question. If you dont know the answer, say that you"
-            "dont know. Keep the answer concise and detailed."
+            "dont know. Always answer the question in detail but"
+            "on-point as well."
             "concise.\n\n{context}"
 
         )
