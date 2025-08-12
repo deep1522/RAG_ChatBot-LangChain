@@ -22,7 +22,12 @@ duckdb
 pandas
 openai
 duckduckgo-search
-pysqlite3
+wikipedia
+mysql-connector-python
+SQLAlchemy
 validators==0.28.1
-
-
+youtube_transcript_api
+unstructured
+pytube
+numexpr
+gradio
