@@ -31,4 +31,3 @@ unstructured
 pytube
 numexpr
 gradio
-pysqlite3
