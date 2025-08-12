@@ -2,8 +2,8 @@
 import sys
 
 # Force Python to use pysqlite3 instead of the default sqlite3
-__import__('pysqlite3')
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# __import__('pysqlite3')
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
 import streamlit as st
