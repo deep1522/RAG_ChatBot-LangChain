@@ -22,7 +22,7 @@ duckdb
 pandas
 openai
 duckduckgo-search
-
+pysqlite3
 validators==0.28.1
 
 
