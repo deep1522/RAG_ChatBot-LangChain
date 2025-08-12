@@ -1,9 +1,11 @@
 ## RAG Q&A Conversation with PDF Including Chat History
-import sys
+# import sys
 
 # Force Python to use pysqlite3 instead of the default sqlite3
 # __import__('pysqlite3')
 # sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+## RAG Q&A Conversation with PDF Including Chat History
 
 import os
 import streamlit as st
@@ -93,8 +95,8 @@ if uploaded_files:
             "You are an Assistant for the question-answering tasks."
             "Use the following pieces of retrieved context to answer"
             "the question. If you dont know the answer, say that you"
-            "dont know. Always answer the question in detail but"
-            "on-point as well."
+            "dont know. Use three sentences maximum and keep the"
+            "answer concise"
             "concise.\n\n{context}"
 
         )
@@ -136,6 +138,8 @@ if uploaded_files:
             # st.write(st.session_state.store)
             st.success(f"Assistant: {response['answer']}")
             st.write("Chat History:",session_history.messages)
+
+
 
 
 
