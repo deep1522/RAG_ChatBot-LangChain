@@ -1,7 +1,8 @@
 import pysqlite3
 import sys
 
-sys.modules["sqlite3"] = sys.modules["pysqlite3"] 
+# The fix must be here, at the top.
+sys.modules["sqlite3"] = sys.modules["pysqlite3"]
 
 
 import os
