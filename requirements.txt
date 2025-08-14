@@ -32,3 +32,4 @@ pytube
 numexpr
 gradio
 torch
+pysqlite3-binary
