@@ -31,3 +31,4 @@ unstructured
 pytube
 numexpr
 gradio
+torch
